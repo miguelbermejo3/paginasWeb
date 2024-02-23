@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.bienvenida.anhadirController">
+   <children>
+      <Button fx:id="btnAnhadir" layoutX="272.0" layoutY="315.0" mnemonicParsing="false" onAction="#anhadir" prefHeight="25.0" prefWidth="71.0" style="-fx-background-radius: 15;" text="Añadir" />
+      <TextField fx:id="txtUrl" layoutX="236.0" layoutY="175.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 10;" />
+      <ComboBox fx:id="cmboxSeccion" layoutX="236.0" layoutY="127.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 15;" />
+      <Label layoutX="128.0" layoutY="131.0" text="CATEGORIA:" />
+      <Label layoutX="141.0" layoutY="179.0" text="URL:" />
+      <Label layoutX="135.0" layoutY="224.0" text="NOMBRE:" />
+      <ComboBox fx:id="cboxUsuarios" layoutX="236.0" layoutY="266.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 15;" />
+      <Label layoutX="134.0" layoutY="270.0" text="USUARIO:" />
+      <TextField fx:id="txtNombre" layoutX="236.0" layoutY="220.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtCategoria" layoutX="233.0" layoutY="63.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="127.0" layoutY="67.0" text="Add Categoria:" />
+      <Button fx:id="btnCategoria" layoutX="492.0" layoutY="63.0" mnemonicParsing="false" onAction="#anhadirCategoria" style="-fx-background-radius: 15;" text="ADD" />
+   </children>
+</AnchorPane>

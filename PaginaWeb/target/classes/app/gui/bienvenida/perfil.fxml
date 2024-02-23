@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.bienvenida.PerfilController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="228.0" text="Mi Nombre: ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="256.0" text="Mi Correo: ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="262.0" layoutY="228.0" prefHeight="17.0" prefWidth="216.0" />
+      <Label fx:id="lblCorreo" layoutX="262.0" layoutY="256.0" prefHeight="17.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>

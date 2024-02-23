@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.bienvenida.BienvenidaController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Páginas Web">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#irAConsulta" text="Favoritos" />
+                  <MenuItem mnemonicParsing="false" onAction="#irAAñadir" text="Añadir" />
+                  <MenuItem mnemonicParsing="false" onAction="#irAModificar" text="Modificar" />
+                  <MenuItem mnemonicParsing="false" onAction="#irAPerfil" text="Perfil" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="App">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cerrarSesion" text="Cerrar sesión" />
+                  <MenuItem mnemonicParsing="false" onAction="#salir" text="salir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="394.0" fitWidth="628.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/imagen.jpeg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
